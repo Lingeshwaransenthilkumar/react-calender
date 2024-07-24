@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type:none;
+  font-family: 'Space Grotesk',sans-serif;
+}
+
+body{
+  background: #555;
+}
+
+.calender{
+  width: 400px;
+  background-color: #fff;
+  margin: 50px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 5px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px;
+}
+
+button{
+  background: #fff;
+  border: transparent;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+button ion-icon{
+  font-size: 10px;
+  color: #3498db;
+}
+
+select{
+  font-size: 18px;
+  padding: 0 8px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+select:focus{
+  outline: none;
+}
+
+.daysOfWeek{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+.days{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.day,
+.empty{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.empty{
+  background-color: #f9f9f9;
+}
+.day:hover{
+  background-color: #3498db;
+  color: #fff;
+}
+
+.day.current{
+  background-color: tomato;
+  color: #fff;
+}
